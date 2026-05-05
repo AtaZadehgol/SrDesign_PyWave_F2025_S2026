@@ -1,0 +1,44 @@
+{
+  "project_name": "demo1",
+  "simulation_type": "Wave Impedance ",
+  "polarization_mode": "TE",
+  "dimension": "2D",
+  "results_path": "./Results",
+  "timestamp": "2026-04-28T21:48:18.284910",
+  "simulation_config_file": "./simulation_config.json",
+  "solver_parameters": {
+    "dt": 1.7677669529663686e-16,
+    "nt": 288,
+    "nx": 100,
+    "ny": 100,
+    "by": 20,
+    "cell": 3,
+    "dy": 5e-08
+  },
+  "selected_variables_chart": [
+    "Ex_M_1",
+    "Ey_M_1",
+    "Hz_M_1",
+    "Ex_M_2",
+    "Ex_M_2_mean",
+    "Ey_M_2",
+    "Ey_M_2_mean",
+    "Hz_M_2",
+    "Hz_M_2_mean",
+    "Ex_M_3",
+    "Ex_M_3_mean",
+    "Ey_M_3",
+    "Ey_M_3_mean",
+    "Hz_M_3",
+    "Hz_M_3_mean"
+  ],
+  "selected_variables_heatmap": [
+    "M_3"
+  ],
+  "active_heatmap_variable": "Ex_M_3",
+  "active_heatmap_domain": "time",
+  "active_heatmap_frequency_display_mode": "magnitude",
+  "show_cpml_overlay_heatmap": true,
+  "chart_grid_rows": 1,
+  "chart_grid_cols": 2
+}

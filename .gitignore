@@ -1,0 +1,21 @@
+// Python
+venv/
+env/
+.venv/
+.env/
+**/__pycache__/
+**/Results/
+/API/Results/
+/API/rough_profiles
+Results/
+*.pyc
+*.pyo
+
+// PyQt5
+pyqt5-env/
+
+// VS Code
+.vscode/
+
+// Miscellaneous
+.Xauthority

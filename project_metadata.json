@@ -1,0 +1,18 @@
+{
+    "project_name": "",
+    "simulation_type": "Wave Impedance ",
+    "polarization_mode": "TE",
+    "dimension": "2D",
+    "results_path": "./Results",
+    "timestamp": "2026-04-17T13:26:25.697479",
+    "simulation_config_file": "./simulation_config.json",
+    "solver_parameters": {
+        "dt": 1.7677669529663686e-16,
+        "nt": 29,
+        "nx": 99,
+        "ny": 99,
+        "by": 20,
+        "cell": 3,
+        "dy": 5e-08
+    }
+}

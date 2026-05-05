@@ -1,0 +1,311 @@
+{
+  "simulation_type": "Wave Impedance ",
+  "polarization_mode": "TE",
+  "geometry": {
+    "rectangles": [
+      {
+        "position": {
+          "x": 1.0096153846153845e-07,
+          "y": 3.989473684210526e-07
+        },
+        "dimensions": {
+          "width": 2.0096153846153845e-07,
+          "height": 1.5157894736842106e-07
+        },
+        "name": "R_1",
+        "material": {
+          "name": "Air",
+          "permittivity": 1.0,
+          "permeability": 1.0,
+          "conductivity": 0.0
+        },
+        "roughness": {
+          "rough_toggle": false
+        },
+        "color": [
+          230,
+          176,
+          68,
+          100
+        ]
+      },
+      {
+        "position": {
+          "x": 3.0096153846153844e-07,
+          "y": 3.2526315789473684e-07
+        },
+        "dimensions": {
+          "width": 1.25e-08,
+          "height": 1.2526315789473683e-07
+        },
+        "name": "R_2",
+        "material": {
+          "name": "Air",
+          "permittivity": 1.0,
+          "permeability": 1.0,
+          "conductivity": 0.0
+        },
+        "roughness": {
+          "rough_toggle": false
+        },
+        "color": [
+          176,
+          230,
+          68,
+          100
+        ]
+      },
+      {
+        "position": {
+          "x": 7.403846153846154e-08,
+          "y": 4.421052631578948e-07
+        },
+        "dimensions": {
+          "width": 2.7884615384615385e-08,
+          "height": 8.947368421052631e-08
+        },
+        "name": "R_3",
+        "material": {
+          "name": "Air",
+          "permittivity": 1.0,
+          "permeability": 1.0,
+          "conductivity": 0.0
+        },
+        "roughness": {
+          "rough_toggle": false
+        },
+        "color": [
+          68,
+          230,
+          68,
+          100
+        ]
+      },
+      {
+        "position": {
+          "x": 8.557692307692307e-08,
+          "y": 2.4842105263157895e-07
+        },
+        "dimensions": {
+          "width": 1.846153846153846e-07,
+          "height": 1.4526315789473685e-07
+        },
+        "name": "R_4",
+        "material": {
+          "name": "Air",
+          "permittivity": 1.0,
+          "permeability": 1.0,
+          "conductivity": 0.0
+        },
+        "roughness": {
+          "rough_toggle": false
+        },
+        "color": [
+          68,
+          230,
+          176,
+          100
+        ]
+      },
+      {
+        "position": {
+          "x": 7.403846153846154e-08,
+          "y": 1.1894736842105262e-07
+        },
+        "dimensions": {
+          "width": 1.25e-08,
+          "height": 1.0736842105263157e-07
+        },
+        "name": "R_5",
+        "material": {
+          "name": "Air",
+          "permittivity": 1.0,
+          "permeability": 1.0,
+          "conductivity": 0.0
+        },
+        "roughness": {
+          "rough_toggle": false
+        },
+        "color": [
+          68,
+          176,
+          230,
+          100
+        ]
+      },
+      {
+        "position": {
+          "x": 3.0096153846153844e-07,
+          "y": 4.5052631578947364e-07
+        },
+        "dimensions": {
+          "width": 4.807692307692308e-08,
+          "height": 1.0105263157894737e-07
+        },
+        "name": "R_6",
+        "material": {
+          "name": "Air",
+          "permittivity": 1.0,
+          "permeability": 1.0,
+          "conductivity": 0.0
+        },
+        "roughness": {
+          "rough_toggle": false
+        },
+        "color": [
+          68,
+          68,
+          230,
+          100
+        ]
+      },
+      {
+        "position": {
+          "x": 4.4807692307692307e-07,
+          "y": 4.010526315789473e-07
+        },
+        "dimensions": {
+          "width": 1.5384615384615385e-07,
+          "height": 1.0105263157894737e-07
+        },
+        "name": "R_7",
+        "material": {
+          "name": "Air",
+          "permittivity": 1.0,
+          "permeability": 1.0,
+          "conductivity": 0.0
+        },
+        "roughness": {
+          "rough_toggle": false
+        },
+        "color": [
+          176,
+          68,
+          230,
+          100
+        ]
+      },
+      {
+        "position": {
+          "x": 4.4903846153846147e-07,
+          "y": 3.0105263157894736e-07
+        },
+        "dimensions": {
+          "width": 1.6634615384615386e-07,
+          "height": 1.568421052631579e-07
+        },
+        "name": "R_8",
+        "material": {
+          "name": "Air",
+          "permittivity": 1.0,
+          "permeability": 1.0,
+          "conductivity": 0.0
+        },
+        "roughness": {
+          "rough_toggle": false
+        },
+        "color": [
+          230,
+          68,
+          176,
+          100
+        ]
+      },
+      {
+        "position": {
+          "x": 6.144230769230769e-07,
+          "y": 2.210526315789474e-07
+        },
+        "dimensions": {
+          "width": 2.1153846153846153e-08,
+          "height": 1.2e-07
+        },
+        "name": "R_9",
+        "material": {
+          "name": "Air",
+          "permittivity": 1.0,
+          "permeability": 1.0,
+          "conductivity": 0.0
+        },
+        "roughness": {
+          "rough_toggle": false
+        },
+        "color": [
+          230,
+          68,
+          68,
+          100
+        ]
+      }
+    ],
+    "grid_spacing": {
+      "delta_x": 5e-08,
+      "delta_y": 5e-08,
+      "units": "meters"
+    },
+    "grid_dimensions": {
+      "nx": 24,
+      "ny": 12,
+      "total_cells": 288,
+      "domain_width": 1.2e-06,
+      "domain_height": 6e-07
+    }
+  },
+  "sources": [
+    {
+      "x": 5.153846153846154e-07,
+      "y": 2.526315789473684e-07,
+      "name": "Source Point 1",
+      "shape": "Point",
+      "source_type": "Gaussian Pulse",
+      "amplitude": 20.0,
+      "frequency": 194800000000000.0,
+      "color": [
+        215,
+        38,
+        38,
+        255
+      ],
+      "gauss_pulse_deg": -6.0,
+      "gp_tsp_coef": 1.0,
+      "gp_tpk_coef": 9.0
+    }
+  ],
+  "measurement_points": [
+    {
+      "x": 4.817307692307693e-07,
+      "y": 3.8105263157894734e-07,
+      "name": "Measurement 1",
+      "shape": "Point",
+      "color": [
+        0,
+        180,
+        0,
+        255
+      ]
+    }
+  ],
+  "metadata": {
+    "created_by": "EM Wave Visualization Tool",
+    "version": "1.0"
+  },
+  "advanced_parameters": {
+    "delta_t_coef": 1.0,
+    "harmonics": 1.0,
+    "num_flights": 2.0,
+    "num_cpml": 2,
+    "eps_rel_bg": 2.25,
+    "mu_rel_bg": 1.0,
+    "rough_toggle": false,
+    "rough_std": 1.5000000000000002e-08,
+    "rough_acl": 7.000000000000001e-07,
+    "ctype": 3,
+    "tol_std": 10.0,
+    "tol_acl": 10.0,
+    "source_type": "Gaussian Pulse",
+    "amplitude": 20.0,
+    "frequency": 198400000000000.0,
+    "gauss_pulse_deg": -6.0,
+    "wave_packet_bw": 0.1
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://pywave.io/schemas/metadata.json",
+  "title": "PyWave Project Metadata",
+  "description": "Output metadata file for PyWave FDTD simulation results (what was actually simulated and where results are)",
+  "type": "object",
+  "required": [
+    "simulation_type",
+    "dimension",
+    "results_path",
+    "timestamp"
+  ],
+  "properties": {
+    "project_name": {
+      "type": "string",
+      "description": "Human-readable project name"
+    },
+    "simulation_type": {
+      "type": "string",
+      "description": "Type of simulation that was run",
+      "enum": [
+        "Wave Impedance",
+        "S-Parameters",
+        "Scattering Loss",
+        "Custom Experiment"
+      ]
+    },
+    "polarization_mode": {
+      "type": "string",
+      "description": "Polarization mode (for 2D simulations)",
+      "enum": [
+        "TE",
+        "TM",
+        "NA"
+      ]
+    },
+    "dimension": {
+      "type": "string",
+      "description": "Dimensionality of the simulation. Note that 3D simulations are currently not supported.",
+      "enum": [
+        "2D",
+        "3D"
+      ]
+    },
+    "results_path": {
+      "type": "string",
+      "description": "Path to directory containing result files (relative to project root)"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp when simulation completed"
+    },
+    "simulation_config_file": {
+      "type": "string",
+      "description": "Path to simulation_config.json file (relative to project root)"
+    },
+    "solver_parameters": {
+      "type": "object",
+      "description": "Solver-generated parameters (not from GUI input)",
+      "properties": {
+        "dt": {
+          "type": "number",
+          "description": "Time step size (seconds)"
+        },
+        "nt": {
+          "type": ["integer", "null"],
+          "description": "Number of time steps"
+        },
+        "nx": {
+          "type": ["integer", "null"],
+          "description": "Number of grid cells in x-direction"
+        },
+        "ny": {
+          "type": ["integer", "null"],
+          "description": "Number of grid cells in y-direction"
+        },
+        "by": {
+          "type": ["integer", "null"],
+          "description": "Reference y position for probe"
+        },
+        "cell": {
+          "type": "integer",
+          "description": "Cell offset for probe positioning"
+        },
+        "dy": {
+          "type": ["number", "null"],
+          "description": "Spatial step size (meters)"
+        }
+      }
+    }
+  }
+}

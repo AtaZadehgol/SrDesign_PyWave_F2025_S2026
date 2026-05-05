@@ -1,0 +1,36 @@
+{
+  "project_name": "demo3",
+  "simulation_type": "Scattering Loss",
+  "polarization_mode": "TE",
+  "dimension": "2D",
+  "results_path": "./Results",
+  "timestamp": "2026-04-28T22:33:32.726300",
+  "simulation_config_file": "./simulation_config.json",
+  "solver_parameters": {
+    "dt": 1.5909902576697319e-16,
+    "nt": 329,
+    "nx": 100,
+    "ny": 100,
+    "by": 20,
+    "cell": 3,
+    "dy": 5e-08
+  },
+  "selected_variables_chart": [
+    "Ex_M_1",
+    "Ex_M_1_mean",
+    "Ey_M_1",
+    "Ey_M_1_mean",
+    "Hz_M_1",
+    "Hz_M_1_mean",
+    "Ex_M_2",
+    "Ey_M_2",
+    "Hz_M_2"
+  ],
+  "selected_variables_heatmap": [
+    "M_1"
+  ],
+  "active_heatmap_variable": "Ex_M_1",
+  "active_heatmap_domain": "time",
+  "active_heatmap_frequency_display_mode": "imaginary",
+  "show_cpml_overlay_heatmap": true
+}

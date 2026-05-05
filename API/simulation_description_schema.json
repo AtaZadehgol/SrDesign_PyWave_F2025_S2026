@@ -1,0 +1,141 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://pywave.io/schemas/simulation_description.json",
+  "title": "PyWave Simulation Description",
+  "description": "Input description for a PyWave FDTD simulation (what the user wants to simulate)",
+  "type": "object",
+  "required": [
+    "simulation_type",
+    "dimension"
+  ],
+  "properties": {
+    "simulation_type": {
+      "type": "string",
+      "description": "Type of simulation to run",
+      "enum": [
+        "Wave Impedance",
+        "S-Parameters",
+        "Scattering Loss",
+        "Custom Experiment"
+      ]
+    },
+    "polarization_mode": {
+      "type": "string",
+      "description": "Polarization mode (for 2D simulations)",
+      "enum": [
+        "TE",
+        "TM",
+        "NA"
+      ]
+    },
+    "dimension": {
+      "type": "string",
+      "description": "Dimensionality of the simulation. Note that 3D simulations are currently not supported.",
+      "enum": [
+        "2D",
+        "3D"
+      ]
+    },
+    "geometry": {
+      "type": "object",
+      "description": "Geometric layout from GUI (rectangles, waveguides, etc.)",
+      "properties": {
+        "rectangles": {
+          "type": "array",
+          "description": "Array of rectangular structures",
+          "items": {
+            "type": "object",
+            "properties": {
+              "position": {
+                "type": "object",
+                "properties": {
+                  "x": {
+                    "type": "number"
+                  },
+                  "y": {
+                    "type": "number"
+                  }
+                }
+              },
+              "dimensions": {
+                "type": "object",
+                "properties": {
+                  "width": {
+                    "type": "number"
+                  },
+                  "height": {
+                    "type": "number"
+                  }
+                }
+              },
+              "name": {
+                "type": "string"
+              },
+              "material": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "permittivity": {
+                    "type": "number"
+                  },
+                  "permeability": {
+                    "type": "number"
+                  },
+                  "conductivity": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "grid_spacing": {
+          "type": "object",
+          "properties": {
+            "delta_x": {
+              "type": "number"
+            },
+            "delta_y": {
+              "type": "number"
+            },
+            "units": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "description": "Source positions from GUI",
+      "items": {
+        "type": "object",
+        "properties": {
+          "x": {
+            "type": "number"
+          },
+          "y": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "measurement_points": {
+      "type": "array",
+      "description": "Measurement point positions from GUI",
+      "items": {
+        "type": "object",
+        "properties": {
+          "x": {
+            "type": "number"
+          },
+          "y": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+}

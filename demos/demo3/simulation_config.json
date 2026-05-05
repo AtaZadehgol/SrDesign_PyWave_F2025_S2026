@@ -1,0 +1,120 @@
+{
+    "simulation_type": "Scattering Loss",
+    "polarization_mode": "TE",
+    "geometry": {
+        "rectangles": [
+            {
+                "position": {
+                    "x": 1.4e-06,
+                    "y": 3.11e-06
+                },
+                "dimensions": {
+                    "width": 2.1499999999999997e-06,
+                    "height": 8.1e-07
+                },
+                "name": "W_1",
+                "material": {
+                    "name": "Silicon",
+                    "permittivity": 11.7,
+                    "permeability": 1.0,
+                    "conductivity": 0.0
+                },
+                "roughness": {
+                    "rough_toggle": false
+                },
+                "color": [
+                    46,
+                    141,
+                    230,
+                    255
+                ]
+            }
+        ],
+        "grid_spacing": {
+            "delta_x": 5e-08,
+            "delta_y": 5e-08,
+            "units": "meters"
+        },
+        "grid_dimensions": {
+            "nx": 100,
+            "ny": 100,
+            "total_cells": 10000,
+            "domain_width": 5e-06,
+            "domain_height": 5e-06
+        }
+    },
+    "sources": [
+        {
+            "x": 2.45e-06,
+            "y": 2.76e-06,
+            "name": "S 1",
+            "shape": "Point",
+            "source_type": "Gaussian Pulse",
+            "amplitude": 20.0,
+            "frequency": 194800000000000.0,
+            "color": [
+                200,
+                43,
+                43,
+                255
+            ],
+            "gauss_pulse_deg": -6.0,
+            "gp_tsp_coef": 1.0,
+            "gp_tpk_coef": 9.0
+        }
+    ],
+    "measurement_points": [
+        {
+            "x": 1.2e-06,
+            "y": 3.75e-06,
+            "name": "M 1",
+            "shape": "Surface",
+            "color": [
+                0,
+                120,
+                80,
+                255
+            ],
+            "xend": 2.9e-06,
+            "yend": 1.75e-06
+        },
+        {
+            "x": 3.2e-06,
+            "y": 2.76e-06,
+            "name": "M 2",
+            "shape": "Point",
+            "color": [
+                0,
+                120,
+                80,
+                255
+            ]
+        }
+    ],
+    "metadata": {
+        "created_by": "EM Wave Visualization Tool",
+        "version": "1.0"
+    },
+    "dimension": "2D",
+    "advanced_parameters": {
+        "delta_t_coef": 0.9,
+        "harmonics": 1.0,
+        "num_flights": 2.0,
+        "num_cpml": 20,
+        "eps_rel_bg": 2.25,
+        "mu_rel_bg": 1.0,
+        "rough_toggle": false,
+        "rough_std": 1.5000000000000002e-08,
+        "rough_acl": 2e-08,
+        "ctype": 3,
+        "tol_std": 20.0,
+        "tol_acl": 20.0,
+        "source_type": "Gaussian Pulse",
+        "amplitude": 20.0,
+        "frequency": 198400000000000.0,
+        "gauss_pulse_deg": -6.0,
+        "wave_packet_bw": 0.1,
+        "output_dir": "/home/ckolze/SrDesign_PyWave_F2025_S2026/demo3/Results"
+    },
+    "project_directory": "/home/ckolze/SrDesign_PyWave_F2025_S2026/demo3"
+}

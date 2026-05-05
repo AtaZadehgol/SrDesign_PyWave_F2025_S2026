@@ -1,0 +1,168 @@
+{
+  "simulation_type": "Wave Impedance ",
+  "polarization_mode": "TE",
+  "geometry": {
+    "rectangles": [
+      {
+        "position": {
+          "x": 1.4499999999999999e-06,
+          "y": 3.2999999999999997e-06
+        },
+        "dimensions": {
+          "width": 4.519230769230769e-07,
+          "height": 4.483430799220273e-07
+        },
+        "name": "W_1",
+        "material": {
+          "name": "Air",
+          "permittivity": 1.0,
+          "permeability": 1.0,
+          "conductivity": 0.0
+        },
+        "roughness": {
+          "rough_toggle": false
+        },
+        "color": [
+          230,
+          176,
+          68,
+          100
+        ]
+      },
+      {
+        "position": {
+          "x": 2.2e-06,
+          "y": 3.2e-06
+        },
+        "dimensions": {
+          "width": 6.490384615384615e-07,
+          "height": 4.483430799220273e-07
+        },
+        "name": "W_2",
+        "material": {
+          "name": "Air",
+          "permittivity": 1.0,
+          "permeability": 1.0,
+          "conductivity": 0.0
+        },
+        "roughness": {
+          "rough_toggle": false
+        },
+        "color": [
+          176,
+          230,
+          68,
+          100
+        ]
+      }
+    ],
+    "grid_spacing": {
+      "delta_x": 5e-08,
+      "delta_y": 5e-08,
+      "units": "meters"
+    },
+    "grid_dimensions": {
+      "nx": 100,
+      "ny": 100,
+      "total_cells": 10000,
+      "domain_width": 4.9999999999999996e-06,
+      "domain_height": 4.9999999999999996e-06
+    }
+  },
+  "sources": [
+    {
+      "x": 1.6e-06,
+      "y": 3.1e-06,
+      "name": "S 1",
+      "shape": "Point",
+      "source_type": "Gaussian Pulse",
+      "amplitude": 20.0,
+      "frequency": 194800000000000.0,
+      "color": [
+        200,
+        43,
+        43,
+        255
+      ],
+      "gauss_pulse_deg": -6.0,
+      "gp_tsp_coef": 1.0,
+      "gp_tpk_coef": 9.0
+    },
+    {
+      "x": 2.7e-06,
+      "y": 3.5e-06,
+      "name": "S 2",
+      "shape": "Line",
+      "source_type": "Gaussian Pulse",
+      "amplitude": 20.0,
+      "frequency": 194800000000000.0,
+      "color": [
+        200,
+        43,
+        43,
+        255
+      ],
+      "gauss_pulse_deg": -6.0,
+      "gp_tsp_coef": 1.0,
+      "gp_tpk_coef": 9.0,
+      "yend": 2.300194931773879e-06
+    }
+  ],
+  "measurement_points": [
+    {
+      "x": 2.8999999999999998e-06,
+      "y": 3.05e-06,
+      "name": "M 1",
+      "shape": "Point",
+      "color": [
+        0,
+        120,
+        80,
+        255
+      ]
+    },
+    {
+      "x": 1.75e-06,
+      "y": 3.1e-06,
+      "name": "M 2",
+      "shape": "Point",
+      "color": [
+        0,
+        120,
+        80,
+        255
+      ]
+    },
+    {
+      "x": 2e-06,
+      "y": 3.55e-06,
+      "name": "M 3",
+      "shape": "Line",
+      "color": [
+        0,
+        120,
+        80,
+        255
+      ],
+      "yend": 2.056530214424951e-06
+    },
+    {
+      "x": 2.4e-06,
+      "y": 2.35e-06,
+      "name": "M 4",
+      "shape": "Surface",
+      "color": [
+        0,
+        120,
+        80,
+        255
+      ],
+      "xend": 3.399038461538461e-06,
+      "yend": 1.45224171539961e-06
+    }
+  ],
+  "metadata": {
+    "created_by": "EM Wave Visualization Tool",
+    "version": "1.0"
+  }
+}
